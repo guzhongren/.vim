@@ -1,9 +1,6 @@
 [submodule "pack/default/start/vim-colors-solarized"]
 	path = pack/default/start/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
-[submodule "pack/default/start/molokai"]
-	path = pack/default/start/molokai
-	url = git@github.com:tomasr/molokai.git
 [submodule "pack/default/start/powerline"]
 	path = pack/default/start/powerline
 	url = git@github.com:powerline/powerline.git
@@ -19,9 +16,6 @@
 [submodule "pack/default/start/vim-signature"]
 	path = pack/default/start/vim-signature
 	url = git@github.com:kshenoy/vim-signature.git
-[submodule "pack/default/start/BOOKMARKS--Mark-and-Highlight-Full-Lines"]
-	path = pack/default/start/BOOKMARKS--Mark-and-Highlight-Full-Lines
-	url = git@github.com:vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines.git
 [submodule "pack/default/start/tagbar"]
 	path = pack/default/start/tagbar
 	url = git@github.com:majutsushi/tagbar.git
@@ -34,27 +28,12 @@
 [submodule "pack/default/start/vimprj"]
 	path = pack/default/start/vimprj
 	url = git@github.com:vim-scripts/vimprj.git
-[submodule "pack/default/start/ctrlsf.vim"]
-	path = pack/default/start/ctrlsf.vim
-	url = git@github.com:dyng/ctrlsf.vim.git
 [submodule "pack/default/start/vim-multiple-cursors"]
 	path = pack/default/start/vim-multiple-cursors
 	url = git@github.com:terryma/vim-multiple-cursors.git
-[submodule "pack/default/start/nerdcommenter"]
-	path = pack/default/start/nerdcommenter
-	url = git@github.com:scrooloose/nerdcommenter.git
-[submodule "pack/default/start/DrawIt"]
-	path = pack/default/start/DrawIt
-	url = git@github.com:vim-scripts/DrawIt.git
 [submodule "pack/default/start/vim-protodef"]
 	path = pack/default/start/vim-protodef
 	url = git@github.com:derekwyatt/vim-protodef.git
-[submodule "pack/default/start/nerdtree"]
-	path = pack/default/start/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
-[submodule "pack/default/start/minibufexpl"]
-	path = pack/default/start/minibufexpl
-	url = git@github.com:fholgado/minibufexpl.vim.git
 [submodule "pack/default/start/wildfire.vim"]
 	path = pack/default/start/wildfire.vim
 	url = git@github.com:gcmt/wildfire.vim.git
@@ -67,9 +46,6 @@
 [submodule "pack/default/start/vim-instant-markdown"]
 	path = pack/default/start/vim-instant-markdown
 	url = git@github.com:suan/vim-instant-markdown.git
-[submodule "pack/default/start/citx.vim"]
-	path = pack/default/start/citx.vim
-	url = git@github.com:lilydjwg/fcitx.vim.git
 [submodule "pack/default/start/typescript-vim"]
 	path = pack/default/start/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
