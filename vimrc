@@ -1,7 +1,6 @@
 " vundle 环境设置
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-
 filetype plugin indent on
 
 " 定义快捷键的前缀, 即<Leader>

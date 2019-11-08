@@ -1,75 +1,75 @@
-[submodule "pack/plugins/start/vim-colors-solarized"]
-	path = pack/plugins/start/vim-colors-solarized
+[submodule "pack/default/start/vim-colors-solarized"]
+	path = pack/default/start/vim-colors-solarized
 	url = git@github.com:altercation/vim-colors-solarized.git
-[submodule "pack/plugins/start/molokai"]
-	path = pack/plugins/start/molokai
+[submodule "pack/default/start/molokai"]
+	path = pack/default/start/molokai
 	url = git@github.com:tomasr/molokai.git
-[submodule "pack/plugins/start/powerline"]
-	path = pack/plugins/start/powerline
+[submodule "pack/default/start/powerline"]
+	path = pack/default/start/powerline
 	url = git@github.com:powerline/powerline.git
-[submodule "pack/plugins/start/vim-cpp-enhanced-highlight"]
-	path = pack/plugins/start/vim-cpp-enhanced-highlight
+[submodule "pack/default/start/vim-cpp-enhanced-highlight"]
+	path = pack/default/start/vim-cpp-enhanced-highlight
 	url = git@github.com:octol/vim-cpp-enhanced-highlight.git
-[submodule "pack/plugins/start/vim-indent-guides"]
-	path = pack/plugins/start/vim-indent-guides
+[submodule "pack/default/start/vim-indent-guides"]
+	path = pack/default/start/vim-indent-guides
 	url = git@github.com:nathanaelkane/vim-indent-guides.git
-[submodule "pack/plugins/start/phvim-fswitchd"]
-	path = pack/plugins/start/phvim-fswitchd
+[submodule "pack/default/start/phvim-fswitchd"]
+	path = pack/default/start/phvim-fswitchd
 	url = git@github.com:derekwyatt/vim-fswitch.git
-[submodule "pack/plugins/start/vim-signature"]
-	path = pack/plugins/start/vim-signature
+[submodule "pack/default/start/vim-signature"]
+	path = pack/default/start/vim-signature
 	url = git@github.com:kshenoy/vim-signature.git
-[submodule "pack/plugins/start/BOOKMARKS--Mark-and-Highlight-Full-Lines"]
-	path = pack/plugins/start/BOOKMARKS--Mark-and-Highlight-Full-Lines
+[submodule "pack/default/start/BOOKMARKS--Mark-and-Highlight-Full-Lines"]
+	path = pack/default/start/BOOKMARKS--Mark-and-Highlight-Full-Lines
 	url = git@github.com:vim-scripts/BOOKMARKS--Mark-and-Highlight-Full-Lines.git
-[submodule "pack/plugins/start/tagbar"]
-	path = pack/plugins/start/tagbar
+[submodule "pack/default/start/tagbar"]
+	path = pack/default/start/tagbar
 	url = git@github.com:majutsushi/tagbar.git
-[submodule "pack/plugins/start/indexer.tar.gz"]
-	path = pack/plugins/start/indexer.tar.gz
+[submodule "pack/default/start/indexer.tar.gz"]
+	path = pack/default/start/indexer.tar.gz
 	url = git@github.com:vim-scripts/indexer.tar.gz.git
-[submodule "pack/plugins/start/DfrankUtil"]
-	path = pack/plugins/start/DfrankUtil
+[submodule "pack/default/start/DfrankUtil"]
+	path = pack/default/start/DfrankUtil
 	url = git@github.com:vim-scripts/DfrankUtil.git
-[submodule "pack/plugins/start/vimprj"]
-	path = pack/plugins/start/vimprj
+[submodule "pack/default/start/vimprj"]
+	path = pack/default/start/vimprj
 	url = git@github.com:vim-scripts/vimprj.git
-[submodule "pack/plugins/start/ctrlsf.vim"]
-	path = pack/plugins/start/ctrlsf.vim
+[submodule "pack/default/start/ctrlsf.vim"]
+	path = pack/default/start/ctrlsf.vim
 	url = git@github.com:dyng/ctrlsf.vim.git
-[submodule "pack/plugins/start/vim-multiple-cursors"]
-	path = pack/plugins/start/vim-multiple-cursors
+[submodule "pack/default/start/vim-multiple-cursors"]
+	path = pack/default/start/vim-multiple-cursors
 	url = git@github.com:terryma/vim-multiple-cursors.git
-[submodule "pack/plugins/start/nerdcommenter"]
-	path = pack/plugins/start/nerdcommenter
+[submodule "pack/default/start/nerdcommenter"]
+	path = pack/default/start/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter.git
-[submodule "pack/plugins/start/DrawIt"]
-	path = pack/plugins/start/DrawIt
+[submodule "pack/default/start/DrawIt"]
+	path = pack/default/start/DrawIt
 	url = git@github.com:vim-scripts/DrawIt.git
-[submodule "pack/plugins/start/ultisnips"]
-	path = pack/plugins/start/ultisnips
-	url = git@github.com:SirVer/ultisnips.git
-[submodule "pack/plugins/start/vim-protodef"]
-	path = pack/plugins/start/vim-protodef
+[submodule "pack/default/start/vim-protodef"]
+	path = pack/default/start/vim-protodef
 	url = git@github.com:derekwyatt/vim-protodef.git
-[submodule "pack/plugins/start/nerdtree"]
-	path = pack/plugins/start/nerdtree
+[submodule "pack/default/start/nerdtree"]
+	path = pack/default/start/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
-[submodule "pack/plugins/start/minibufexpl"]
-	path = pack/plugins/start/minibufexpl
+[submodule "pack/default/start/minibufexpl"]
+	path = pack/default/start/minibufexpl
 	url = git@github.com:fholgado/minibufexpl.vim.git
-[submodule "pack/plugins/start/wildfire.vim"]
-	path = pack/plugins/start/wildfire.vim
+[submodule "pack/default/start/wildfire.vim"]
+	path = pack/default/start/wildfire.vim
 	url = git@github.com:gcmt/wildfire.vim.git
-[submodule "pack/plugins/start/gundo.vim"]
-	path = pack/plugins/start/gundo.vim
+[submodule "pack/default/start/gundo.vim"]
+	path = pack/default/start/gundo.vim
 	url = git@github.com:sjl/gundo.vim.git
-[submodule "pack/plugins/start/vim-easymotion"]
-	path = pack/plugins/start/vim-easymotion
+[submodule "pack/default/start/vim-easymotion"]
+	path = pack/default/start/vim-easymotion
 	url = git@github.com:Lokaltog/vim-easymotion.git
-[submodule "pack/plugins/start/vim-instant-markdown"]
-	path = pack/plugins/start/vim-instant-markdown
+[submodule "pack/default/start/vim-instant-markdown"]
+	path = pack/default/start/vim-instant-markdown
 	url = git@github.com:suan/vim-instant-markdown.git
-[submodule "pack/plugins/start/citx.vim"]
-	path = pack/plugins/start/citx.vim
+[submodule "pack/default/start/citx.vim"]
+	path = pack/default/start/citx.vim
 	url = git@github.com:lilydjwg/fcitx.vim.git
+[submodule "pack/default/start/typescript-vim"]
+	path = pack/default/start/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
