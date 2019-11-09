@@ -49,3 +49,54 @@
 [submodule "pack/default/start/typescript-vim"]
 	path = pack/default/start/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "pack/default/start/typescript-vim"]
+	path = pack/default/start/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "pack/default/start/typescript-vim"]
+	path = pack/default/start/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "pack/default/start/typescript-vim"]
+	path = pack/default/start/typescript-vim
+	url = git@github.com:leafgarland/typescript-vim.git
+[submodule "pack/default/start/completor-neosnippet"]
+	path = pack/default/start/completor-neosnippet
+	url = git@github.com:maralla/completor-neosnippet.git
+[submodule "pack/default/start/completor.vim"]
+	path = pack/default/start/completor.vim
+	url = git@github.com:maralla/completor.vim.git
+[submodule "pack/default/start/Dockerfile.vim"]
+	path = pack/default/start/Dockerfile.vim
+	url = git@github.com:ekalinin/Dockerfile.vim.git
+[submodule "pack/default/start/editorconfig-vim"]
+	path = pack/default/start/editorconfig-vim
+	url = git@github.com:editorconfig/editorconfig-vim.git
+[submodule "pack/default/start/nerdtree"]
+	path = pack/default/start/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
+[submodule "pack/default/start/rust.vim"]
+	path = pack/default/start/rust.vim
+	url = git@github.com:rust-lang/rust.vim.git
+[submodule "pack/default/start/tern_for_vim"]
+	path = pack/default/start/tern_for_vim
+	url = git@github.com:ternjs/tern_for_vim.git
+[submodule "pack/default/start/thrift.vim"]
+	path = pack/default/start/thrift.vim
+	url = git@github.com:solarnz/thrift.vim.git
+[submodule "pack/default/start/vim-airline"]
+	path = pack/default/start/vim-airline
+	url = git@github.com:vim-airline/vim-airline.git
+[submodule "pack/default/start/vim-airline-themes"]
+	path = pack/default/start/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
+[submodule "pack/default/start/vim-fugitive"]
+	path = pack/default/start/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "pack/default/start/vim-go"]
+	path = pack/default/start/vim-go
+	url = git@github.com:fatih/vim-go.git
+[submodule "pack/default/start/vim-markdown"]
+	path = pack/default/start/vim-markdown
+	url = git@github.com:plasticboy/vim-markdown.git
+[submodule "pack/default/start/webapi-vim"]
+	path = pack/default/start/webapi-vim
+	url = git@github.com:mattn/webapi-vim.git
