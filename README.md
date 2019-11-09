@@ -1,6 +1,10 @@
 
 # .vim
 
+## 效果
+
+![vim](./vim.png)
+
 ## 安装
 
 ```shell
