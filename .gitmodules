@@ -103,3 +103,6 @@
 [submodule "pack/default/start/vim-javascript"]
 	path = pack/default/start/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
+[submodule "pack/default/start/nerdtree-git-plugin"]
+	path = pack/default/start/nerdtree-git-plugin
+	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
