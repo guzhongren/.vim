@@ -106,3 +106,21 @@
 [submodule "pack/default/start/nerdtree-git-plugin"]
 	path = pack/default/start/nerdtree-git-plugin
 	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
+[submodule "pack/default/start/vim-rainbow"]
+	path = pack/default/start/vim-rainbow
+	url = git@github.com:frazrepo/vim-rainbow.git
+[submodule "pack/default/start/nerdcommenter"]
+	path = pack/default/start/nerdcommenter
+	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "pack/default/start/fzf.vim"]
+	path = pack/default/start/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
+[submodule "pack/default/start/ack.vim"]
+	path = pack/default/start/ack.vim
+	url = git@github.com:mileszs/ack.vim.git
+[submodule "pack/default/start/vim-gitgutter"]
+	path = pack/default/start/vim-gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
+[submodule "pack/default/start/taglist.vim"]
+	path = pack/default/start/taglist.vim
+	url = git@github.com:vim-scripts/taglist.vim.git
