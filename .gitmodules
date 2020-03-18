@@ -124,3 +124,6 @@
 [submodule "pack/default/start/taglist.vim"]
 	path = pack/default/start/taglist.vim
 	url = git@github.com:vim-scripts/taglist.vim.git
+[submodule "pack/default/start/markdown-preview.nvim"]
+	path = pack/default/start/markdown-preview.nvim
+	url = git@github.com:iamcco/markdown-preview.nvim.git
