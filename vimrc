@@ -103,8 +103,8 @@ set shiftwidth=4
 " 允许使用退格键
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
-" 取消换行
-set nowrap
+" 换行
+set wrap
  
 " 在被分割的窗口间显示空白
 set fillchars=vert:\ ,stl:\ ,stlnc:\
