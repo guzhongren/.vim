@@ -86,6 +86,9 @@ set hlsearch
  
 " 在搜索时, 输入的词句的逐字符高亮
 set incsearch
+" 大小写智能转换
+set smartcase
+
 " 继承前一行的缩进方式
 set autoindent
  
@@ -94,11 +97,11 @@ set smartindent
 " 使用c样式的缩进
 set cindent
  
-" 制表符为4
-set tabstop=4
-" 统一缩进为4
-set softtabstop=4
-set shiftwidth=4
+" 制表符为2
+set tabstop=2
+" 统一缩进为2
+set softtabstop=2
+set shiftwidth=2
  
 " 允许使用退格键
 set backspace=eol,start,indent
