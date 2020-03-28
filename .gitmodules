@@ -127,3 +127,6 @@
 [submodule "pack/default/start/markdown-preview.nvim"]
 	path = pack/default/start/markdown-preview.nvim
 	url = git@github.com:iamcco/markdown-preview.nvim.git
+[submodule "pack/default/start/vim-wakatime"]
+	path = pack/default/start/vim-wakatime
+	url = git@github.com:wakatime/vim-wakatime.git
