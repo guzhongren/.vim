@@ -6,13 +6,23 @@ filetype plugin indent on
 " 定义快捷键的前缀, 即<Leader>
 let mapleader=";"
 
+" 开启鼠标复制粘贴
+if has('mouse')
+	set mouse-=a
+endif
+
 " 设置状态栏主题风格
 let g:Powerline_colorscheme='solarized256'
 
 " 基于缩进或语法进行代码折叠
 set foldmethod=syntax
+
 " 启动 vim 时关闭折叠代码
 set nofoldenable
+
+" 打开拼写检查
+set spelllang=en_us,cjk
+set spell
 
 " 打开语法高亮
 syntax on
