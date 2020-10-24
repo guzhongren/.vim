@@ -30,6 +30,7 @@ syntax on
 " 使用配色方案
 colorscheme solarized 
 "colorscheme jellybeans 
+" 使背景透明
 hi Normal guibg=NONE ctermbg=NONE
 " 打开文件类型检测功能
 filetype on
@@ -289,4 +290,5 @@ let g:mkdp_page_title = '「${name}」'
 nmap <C-s> <Plug>MarkdownPreview
 nmap <M-s> <Plug>MarkdownPreviewStop
 nmap <C-p> <Plug>MarkdownPreviewToggle
-
+" 调整air-line的主题
+let g:airline_theme="bubblegum"
