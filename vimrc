@@ -155,6 +155,9 @@ autocmd FileType java set omnifunc=javacomplete#Complet
 " NERDTree
 let NERDTreeShowHidden=1
 autocmd vimenter * NERDTree
+wincmd w
+autocmd vimenter * wincmd w
+
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <F3> :NERDTreeMirror<CR>
