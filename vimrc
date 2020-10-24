@@ -30,6 +30,7 @@ syntax on
 " 使用配色方案
 colorscheme solarized 
 "colorscheme jellybeans 
+hi Normal guibg=NONE ctermbg=NONE
 " 打开文件类型检测功能
 filetype on
 
