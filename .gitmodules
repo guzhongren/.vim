@@ -142,3 +142,6 @@
 [submodule "/Users/c4/.vim/pack/default/start/rainbow_parentheses.vim"]
 	path = /Users/c4/.vim/pack/default/start/rainbow_parentheses.vim
 	url = git@github.com:kien/rainbow_parentheses.vim.git
+[submodule "/Users/c4/.vim/pack/default/start/any-jump.vim"]
+	path = /Users/c4/.vim/pack/default/start/any-jump.vim
+	url = git@github.com:pechorin/any-jump.vim.git
