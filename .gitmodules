@@ -133,3 +133,9 @@
 [submodule "pack/default/start/minimap.vim"]
 	path = pack/default/start/minimap.vim
 	url = git@github.com:wfxr/minimap.vim.git
+[submodule "/Users/c4/.vim/pack/default/start/vista.vim"]
+	path = /Users/c4/.vim/pack/default/start/vista.vim
+	url = git@github.com:liuchengxu/vista.vim.git
+[submodule "/Users/c4/.vim/pack/default/start/vim-gutentags"]
+	path = /Users/c4/.vim/pack/default/start/vim-gutentags
+	url = git@github.com:ludovicchabant/vim-gutentags.git
