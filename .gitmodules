@@ -133,15 +133,15 @@
 [submodule "pack/default/start/minimap.vim"]
 	path = pack/default/start/minimap.vim
 	url = git@github.com:wfxr/minimap.vim.git
-[submodule "/Users/c4/.vim/pack/default/start/vista.vim"]
-	path = /Users/c4/.vim/pack/default/start/vista.vim
+[submodule "pack/default/start/vista.vim"]
+	path = pack/default/start/vista.vim
 	url = git@github.com:liuchengxu/vista.vim.git
-[submodule "/Users/c4/.vim/pack/default/start/vim-gutentags"]
-	path = /Users/c4/.vim/pack/default/start/vim-gutentags
+[submodule "pack/default/start/vim-gutentags"]
+	path = pack/default/start/vim-gutentags
 	url = git@github.com:ludovicchabant/vim-gutentags.git
-[submodule "/Users/c4/.vim/pack/default/start/rainbow_parentheses.vim"]
-	path = /Users/c4/.vim/pack/default/start/rainbow_parentheses.vim
+[submodule "pack/default/start/rainbow_parentheses.vim"]
+	path = pack/default/start/rainbow_parentheses.vim
 	url = git@github.com:kien/rainbow_parentheses.vim.git
-[submodule "/Users/c4/.vim/pack/default/start/any-jump.vim"]
-	path = /Users/c4/.vim/pack/default/start/any-jump.vim
+[submodule "pack/default/start/any-jump.vim"]
+	path = pack/default/start/any-jump.vim
 	url = git@github.com:pechorin/any-jump.vim.git
