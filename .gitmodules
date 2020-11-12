@@ -145,3 +145,6 @@
 [submodule "pack/default/start/any-jump.vim"]
 	path = pack/default/start/any-jump.vim
 	url = git@github.com:pechorin/any-jump.vim.git
+[submodule "pack/default/start/kotlin-vim"]
+	path = pack/default/start/kotlin-vim
+	url = git@github.com:udalov/kotlin-vim.git
