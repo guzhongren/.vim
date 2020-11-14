@@ -58,12 +58,6 @@
 [submodule "pack/default/start/typescript-vim"]
 	path = pack/default/start/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git
-[submodule "pack/default/start/completor-neosnippet"]
-	path = pack/default/start/completor-neosnippet
-	url = git@github.com:maralla/completor-neosnippet.git
-[submodule "pack/default/start/completor.vim"]
-	path = pack/default/start/completor.vim
-	url = git@github.com:maralla/completor.vim.git
 [submodule "pack/default/start/Dockerfile.vim"]
 	path = pack/default/start/Dockerfile.vim
 	url = git@github.com:ekalinin/Dockerfile.vim.git
@@ -151,6 +145,6 @@
 [submodule "pack/default/start/ctrlp.vim"]
 	path = pack/default/start/ctrlp.vim
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
-[submodule "pack/default/start/coc.nvim"]
-	path = pack/default/start/coc.nvim
+[submodule "/Users/c4/.vim/pack/default/start/coc.nvim"]
+	path = /Users/c4/.vim/pack/default/start/coc.nvim
 	url = git@github.com:neoclide/coc.nvim.git
