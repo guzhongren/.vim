@@ -450,6 +450,7 @@ let g:coc_global_extensions = [
 	\ 'coc-vetur',
 	\ 'coc-vimlsp',
 	\ 'coc-yaml',
+	\ 'coc-deno',
 	\ 'coc-yank']
 
   " TextEdit might fail if hidden is not set.
