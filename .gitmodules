@@ -145,6 +145,6 @@
 [submodule "pack/default/start/ctrlp.vim"]
 	path = pack/default/start/ctrlp.vim
 	url = git@github.com:ctrlpvim/ctrlp.vim.git
-[submodule "/Users/c4/.vim/pack/default/start/coc.nvim"]
-	path = /Users/c4/.vim/pack/default/start/coc.nvim
+[submodule "pack/default/start/coc.nvim"]
+	path = pack/default/start/coc.nvim
 	url = git@github.com:neoclide/coc.nvim.git
