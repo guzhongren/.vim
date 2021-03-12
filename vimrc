@@ -26,8 +26,8 @@ set spell
 syntax on
 
 " 使用配色方案
-colorscheme solarized 
-"colorscheme jellybeans 
+" colorscheme solarized 
+" colorscheme jellybeans 
 " 使背景透明
 hi Normal guibg=NONE ctermbg=NONE
 " 打开文件类型检测功能
