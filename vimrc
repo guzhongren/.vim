@@ -19,8 +19,9 @@ set foldmethod=syntax
 set nofoldenable
 
 " 打开拼写检查
-set spelllang=en_us,cjk
-set spell
+" set spelllang=en,cjk
+" set spell
+" set spellfile=~/.vim/spell/en.utf-8.add
 
 " 打开语法高亮
 syntax on
@@ -58,7 +59,7 @@ set history=1000
 " 当文件被外部改变时自动读取
 set autoread 
 
-" 取消自动备份及产生swp文件
+" 取消自动备份及产生 swp 文件
 set nobackup
 set nowb
 set noswapfile
