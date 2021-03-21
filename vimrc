@@ -1,6 +1,3 @@
-filetype off
-filetype plugin indent on
-
 " 定义快捷键的前缀, 即<Leader>
 let mapleader=" "
 
@@ -175,6 +172,7 @@ endif
 " 高亮搜索关键词
 let g:ackhighlight = 1
 
+let g:javascript_plugin_jsdoc = 1
 " nerdcommenter
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
