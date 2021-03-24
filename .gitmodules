@@ -148,9 +148,9 @@
 [submodule "pack/default/start/coc.nvim"]
 	path = pack/default/start/coc.nvim
 	url = git@github.com:neoclide/coc.nvim.git
-[submodule "/Users/c4/.vim/pack/default/start/spelunker.vim"]
-	path = /Users/c4/.vim/pack/default/start/spelunker.vim
+[submodule "pack/default/start/spelunker.vim"]
+	path = pack/default/start/spelunker.vim
 	url = git@github.com:kamykn/spelunker.vim.git
-[submodule "/Users/c4/.vim/pack/themes/start/dracula"]
-	path = /Users/c4/.vim/pack/themes/start/dracula
+[submodule "pack/themes/start/dracula"]
+	path = pack/themes/start/dracula
 	url = git@github.com:dracula/vim.git
