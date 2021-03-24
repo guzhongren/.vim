@@ -25,7 +25,8 @@ syntax on
 
 " 使用配色方案
 " colorscheme solarized 
-" colorscheme jellybeans 
+packadd! dracula
+colorscheme dracula
 " 使背景透明
 hi Normal guibg=NONE ctermbg=NONE
 " 打开文件类型检测功能

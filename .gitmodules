@@ -151,3 +151,6 @@
 [submodule "/Users/c4/.vim/pack/default/start/spelunker.vim"]
 	path = /Users/c4/.vim/pack/default/start/spelunker.vim
 	url = git@github.com:kamykn/spelunker.vim.git
+[submodule "/Users/c4/.vim/pack/themes/start/dracula"]
+	path = /Users/c4/.vim/pack/themes/start/dracula
+	url = git@github.com:dracula/vim.git
