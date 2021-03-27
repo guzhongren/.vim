@@ -22,8 +22,8 @@ map! <D-v> *
 nnoremap <nowait> <expr>  coc#float#has_scroll() ? coc#float#scroll(0) : "\"
 nnoremap <nowait> <expr>  coc#float#has_scroll() ? coc#float#scroll(1) : "\"
 map  <Plug>(wildfire-fuel)
-xnoremap <silent>  :call multiple_cursors#new("v", 0)
-nnoremap <silent>  :call multiple_cursors#new("n", 1)
+xmap <nowait>  <Plug>(VM-Find-Subword-Under)
+nmap <nowait>  <Plug>(VM-Find-Under)
 map  <Plug>(ctrlp)
 xmap <silent>  <Plug>(coc-range-select)
 nmap <silent>  <Plug>(coc-range-select)
@@ -73,10 +73,45 @@ nmap <silent>  - <Plug>(coc-diagnostic-prev)
 nnoremap <nowait> <silent>  a :CocList diagnostics
 nnoremap <silent> '[ :call signature#mark#Goto("prev", "line", "alpha")
 nnoremap <silent> '] :call signature#mark#Goto("next", "line", "alpha")
+nmap Zt <Plug>(spelunker-toggle-buffer)
+nmap ZT <Plug>(spelunker-toggle)
+nmap ZP <Plug>(spelunker-jump-prev)
+nmap ZN <Plug>(spelunker-jump-next)
+nmap ZUW <Plug>(undo-temporary-spelunker-bad-nmap)
+xmap ZUW <Plug>(undo-temporary-spelunker-bad)
+nmap ZW <Plug>(add-temporary-spelunker-bad-nmap)
+xmap ZW <Plug>(add-temporary-spelunker-bad)
+nmap Zuw <Plug>(undo-spelunker-bad-nmap)
+xmap Zuw <Plug>(undo-spelunker-bad)
+nmap Zw <Plug>(add-spell-bad-nmap)
+xmap Zw <Plug>(add-spelunker-bad)
+nmap ZUG <Plug>(undo-temporary-spelunker-good-nmap)
+xmap ZUG <Plug>(undo-temporary-spelunker-good)
+nmap ZG <Plug>(add-temporary-spelunker-good-nmap)
+xmap ZG <Plug>(add-temporary-spelunker-good)
+nmap Zug <Plug>(undo-spelunker-good-nmap)
+xmap Zug <Plug>(undo-spelunker-good)
+nmap Zg <Plug>(add-spelunker-good-nmap)
+xmap Zg <Plug>(add-spelunker-good)
+nmap ZF <Plug>(spelunker-correct-all-feeling-lucky)
+nmap Zf <Plug>(spelunker-correct-feeling-lucky)
+nmap ZC <Plug>(spelunker-correct-all)
+nmap Zc <Plug>(spelunker-correct)
+nmap ZL <Plug>(spelunker-correct-all-from-list)
+nmap Zl <Plug>(spelunker-correct-from-list)
 nnoremap <silent> [= :call signature#marker#Goto("prev", "any",  v:count)
 nnoremap <silent> [- :call signature#marker#Goto("prev", "same", v:count)
 nnoremap <silent> [` :call signature#mark#Goto("prev", "spot", "pos")
 nnoremap <silent> [' :call signature#mark#Goto("prev", "line", "pos")
+xmap <nowait> \\c <Plug>(VM-Visual-Cursors)
+nmap <nowait> \\gS <Plug>(VM-Reselect-Last)
+nmap <nowait> \\/ <Plug>(VM-Start-Regex-Search)
+nmap <nowait> \\\ <Plug>(VM-Add-Cursor-At-Pos)
+xmap <nowait> \\a <Plug>(VM-Visual-Add)
+xmap <nowait> \\f <Plug>(VM-Visual-Find)
+xmap <nowait> \\/ <Plug>(VM-Visual-Regex)
+xmap <nowait> \\A <Plug>(VM-Visual-All)
+nmap <nowait> \\A <Plug>(VM-Select-All)
 nnoremap <silent> ]= :call signature#marker#Goto("next", "any",  v:count)
 nnoremap <silent> ]- :call signature#marker#Goto("next", "same", v:count)
 nnoremap <silent> ]` :call signature#mark#Goto("next", "spot", "pos")
@@ -122,16 +157,54 @@ vnoremap <silent> <Plug>(coc-translator-pv) :call coc#rpc#notify('doKeymap', [
 nnoremap <silent> <Plug>(coc-translator-p) :call coc#rpc#notify('doKeymap', ['translator-p'])
 vnoremap <silent> <Plug>(coc-snippets-select) :call coc#rpc#notify('doKeymap', ['snippets-select'])
 xnoremap <silent> <Plug>(coc-convert-snippet) :call coc#rpc#notify('doKeymap', ['convert-snippet'])
+nnoremap <SNR>173_: :=v:count ? v:count : ''
 onoremap <silent> <Plug>(wildfire-quick-select) :call wildfire#QuickSelect(['ip', 'i)', 'i]', 'i}', 'i''', 'i"', 'it'])
 nnoremap <silent> <Plug>(wildfire-quick-select) :call wildfire#QuickSelect(['ip', 'i)', 'i]', 'i}', 'i''', 'i"', 'it'])
 vnoremap <silent> <Plug>(wildfire-fuel) :call wildfire#Fuel(v:count1)
 onoremap <silent> <Plug>(wildfire-fuel) :call wildfire#Start(v:count1, ['ip', 'i)', 'i]', 'i}', 'i''', 'i"', 'it'])
 nnoremap <silent> <Plug>(wildfire-fuel) :call wildfire#Start(v:count1, ['ip', 'i)', 'i]', 'i}', 'i''', 'i"', 'it'])
 vnoremap <silent> <Plug>(wildfire-water) :call wildfire#Water(v:count1)
+nmap <nowait> <C-Down> <Plug>(VM-Add-Cursor-Down)
+nmap <nowait> <C-Up> <Plug>(VM-Add-Cursor-Up)
+nmap <nowait> <S-Right> <Plug>(VM-Select-l)
+nmap <nowait> <S-Left> <Plug>(VM-Select-h)
+nnoremap <silent> <Plug>(VM-Select-BBW) :call vm#commands#motion('BBW', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Select-gE) :call vm#commands#motion('gE', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Select-ge) :call vm#commands#motion('ge', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Select-E) :call vm#commands#motion('E', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Select-e) :call vm#commands#motion('e', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Select-B) :call vm#commands#motion('B', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Select-b) :call vm#commands#motion('b', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Select-W) :call vm#commands#motion('W', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Select-w) :call vm#commands#motion('w', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Select-l) :call vm#commands#motion('l', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Select-k) :call vm#commands#motion('k', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Select-j) :call vm#commands#motion('j', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Select-h) :call vm#commands#motion('h', v:count1, 1, 0)
+nnoremap <silent> <Plug>(VM-Mouse-Column) :call vm#commands#mouse_column()
+nmap <silent> <Plug>(VM-Mouse-Word) <Plug>(VM-Left-Mouse)<Plug>(VM-Find-Under)
+nmap <silent> <Plug>(VM-Mouse-Cursor) <Plug>(VM-Left-Mouse)<Plug>(VM-Add-Cursor-At-Pos)
+nnoremap <silent> <Plug>(VM-Left-Mouse) <LeftMouse>
+xnoremap <silent> <Plug>(VM-Visual-Regex) :call vm#commands#find_by_regex(2):call feedkeys('/', 'n')
+nnoremap <silent> <Plug>(VM-Slash-Search) @=vm#commands#find_by_regex(3)
+nnoremap <silent> <Plug>(VM-Start-Regex-Search) @=vm#commands#find_by_regex(1)
+nnoremap <silent> <Plug>(VM-Find-Under) :call vm#commands#ctrln(v:count1)
+xnoremap <silent> <Plug>(VM-Visual-Reduce) :call vm#visual#reduce()
+xnoremap <silent> <Plug>(VM-Visual-Add) :call vm#commands#visual_add()
+xnoremap <silent> <Plug>(VM-Visual-Cursors) :call vm#commands#visual_cursors()
+nnoremap <silent> <Plug>(VM-Select-All) :call vm#commands#find_all(0, 1)
+nnoremap <silent> <Plug>(VM-Reselect-Last) :call vm#commands#reselect_last()
+nnoremap <silent> <Plug>(VM-Select-Cursor-Up) :call vm#commands#add_cursor_up(1, v:count1)
+nnoremap <silent> <Plug>(VM-Select-Cursor-Down) :call vm#commands#add_cursor_down(1, v:count1)
+nnoremap <silent> <Plug>(VM-Add-Cursor-Up) :call vm#commands#add_cursor_up(0, v:count1)
+nnoremap <silent> <Plug>(VM-Add-Cursor-Down) :call vm#commands#add_cursor_down(0, v:count1)
+nnoremap <silent> <Plug>(VM-Add-Cursor-At-Word) :call vm#commands#add_cursor_at_word(1, 1)
+nnoremap <silent> <Plug>(VM-Add-Cursor-At-Pos) :call vm#commands#add_cursor_at_pos(0)
+xmap <silent> <expr> <Plug>(VM-Visual-Find) vm#operators#find(1, 1)
 xnoremap <silent> <M-n> :call multiple_cursors#select_all("v", 0)
 nnoremap <silent> <M-n> :call multiple_cursors#select_all("n", 1)
-xnoremap <silent> <C-N> :call multiple_cursors#new("v", 0)
-nnoremap <silent> <C-N> :call multiple_cursors#new("n", 1)
+xmap <nowait> <C-N> <Plug>(VM-Find-Subword-Under)
+nmap <nowait> <C-N> <Plug>(VM-Find-Under)
 nnoremap <silent> <Plug>GitGutterPreviewHunk :call gitgutter#utility#warn('please change your map <Plug>GitGutterPreviewHunk to <Plug>(GitGutterPreviewHunk)')
 nnoremap <silent> <Plug>(GitGutterPreviewHunk) :GitGutterPreviewHunk
 nnoremap <silent> <Plug>GitGutterUndoHunk :call gitgutter#utility#warn('please change your map <Plug>GitGutterUndoHunk to <Plug>(GitGutterUndoHunk)')
@@ -522,6 +595,32 @@ xnoremap <silent> <Plug>(easymotion-fln) :call EasyMotion#SL(-1,1,0)
 nnoremap <silent> <Plug>(easymotion-fln) :call EasyMotion#SL(-1,0,0)
 snoremap <silent> <Plug>(easymotion-fln) :call EasyMotion#SL(-1,0,0)
 onoremap <silent> <Plug>(easymotion-fln) :call EasyMotion#SL(-1,0,0)
+nnoremap <silent> <Plug>(spelunker-toggle-buffer) :call spelunker#toggle_buffer()
+nnoremap <silent> <Plug>(spelunker-toggle) :call spelunker#toggle()
+nnoremap <silent> <Plug>(spelunker-jump-prev) :call spelunker#jump_prev()
+nnoremap <silent> <Plug>(spelunker-jump-next) :call spelunker#jump_next()
+nnoremap <silent> <Plug>(undo-temporary-spelunker-bad-nmap) :call spelunker#execute_with_target_word('spellundo!') :call spelunker#check()
+vnoremap <silent> <Plug>(undo-temporary-spelunker-bad) zuW :call spelunker#check()
+nnoremap <silent> <Plug>(add-temporary-spelunker-bad-nmap) :call spelunker#execute_with_target_word('spellwrong!') :call spelunker#check()
+vnoremap <silent> <Plug>(add-temporary-spelunker-bad) zW :call spelunker#check()
+nnoremap <silent> <Plug>(undo-spelunker-bad-nmap) :call spelunker#execute_with_target_word('spellundo') :call spelunker#check()
+vnoremap <silent> <Plug>(undo-spelunker-bad) zuw :call spelunker#check()
+nnoremap <silent> <Plug>(add-spell-bad-nmap) :call spelunker#execute_with_target_word('spellwrong') :call spelunker#check()
+vnoremap <silent> <Plug>(add-spelunker-bad) zw :call spelunker#check()
+nnoremap <silent> <Plug>(undo-temporary-spelunker-good-nmap) :call spelunker#execute_with_target_word('spellundo!') :call spelunker#check()
+vnoremap <silent> <Plug>(undo-temporary-spelunker-good) zuG :call spelunker#check()
+nnoremap <silent> <Plug>(add-temporary-spelunker-good-nmap) :call spelunker#execute_with_target_word('spellgood!') :call spelunker#check()
+vnoremap <silent> <Plug>(add-temporary-spelunker-good) zG :call spelunker#check()
+nnoremap <silent> <Plug>(undo-spelunker-good-nmap) :call spelunker#execute_with_target_word('spellundo') :call spelunker#check()
+vnoremap <silent> <Plug>(undo-spelunker-good) zug :call spelunker#check()
+nnoremap <silent> <Plug>(add-spelunker-good-nmap) :call spelunker#execute_with_target_word('spellgood') :call spelunker#check()
+vnoremap <silent> <Plug>(add-spelunker-good) zg :call spelunker#check()
+nnoremap <silent> <Plug>(spelunker-correct-all-feeling-lucky) :call spelunker#correct_all_feeling_lucky()
+nnoremap <silent> <Plug>(spelunker-correct-feeling-lucky) :call spelunker#correct_feeling_lucky()
+nnoremap <silent> <Plug>(spelunker-correct-all) :call spelunker#correct_all()
+nnoremap <silent> <Plug>(spelunker-correct) :call spelunker#correct()
+nnoremap <silent> <Plug>(spelunker-correct-all-from-list) :call spelunker#correct_all_from_list()
+nnoremap <silent> <Plug>(spelunker-correct-from-list) :call spelunker#correct_from_list()
 xnoremap <silent> <Plug>NERDCommenterUncomment :call NERDComment("x", "Uncomment")
 nnoremap <silent> <Plug>NERDCommenterUncomment :call NERDComment("n", "Uncomment")
 xnoremap <silent> <Plug>NERDCommenterAlignBoth :call NERDComment("x", "AlignBoth")
@@ -631,6 +730,8 @@ set incsearch
 set langmenu=zh_CN.UTF-8
 set laststatus=2
 set mouse=a
+set omnifunc=javascriptcomplete#CompleteJS
+set operatorfunc=<SNR>29_FormatFromSelected
 set ruler
 set runtimepath=
 set runtimepath+=~/.config/coc/extensions/node_modules/coc-todolist
@@ -639,6 +740,7 @@ set runtimepath+=~/.vim/pack/default/start/wildfire.vim
 set runtimepath+=~/.vim/pack/default/start/webapi-vim
 set runtimepath+=~/.vim/pack/default/start/vista.vim
 set runtimepath+=~/.vim/pack/default/start/vim-wakatime
+set runtimepath+=~/.vim/pack/default/start/vim-visual-multi
 set runtimepath+=~/.vim/pack/default/start/vim-signature
 set runtimepath+=~/.vim/pack/default/start/vim-rainbow
 set runtimepath+=~/.vim/pack/default/start/vim-protodef
@@ -661,6 +763,7 @@ set runtimepath+=~/.vim/pack/default/start/thrift.vim
 set runtimepath+=~/.vim/pack/default/start/tern_for_vim
 set runtimepath+=~/.vim/pack/default/start/taglist.vim
 set runtimepath+=~/.vim/pack/default/start/tagbar
+set runtimepath+=~/.vim/pack/default/start/spelunker.vim
 set runtimepath+=~/.vim/pack/default/start/rust.vim
 set runtimepath+=~/.vim/pack/default/start/rainbow_parentheses.vim
 set runtimepath+=~/.vim/pack/default/start/powerline
@@ -678,6 +781,7 @@ set runtimepath+=~/.vim/pack/default/start/ctrlp.vim
 set runtimepath+=~/.vim/pack/default/start/coc.nvim
 set runtimepath+=~/.vim/pack/default/start/any-jump.vim
 set runtimepath+=~/.vim/pack/default/start/ack.vim
+set runtimepath+=~/.vim/pack/themes/start/dracula
 set runtimepath+=/usr/local/share/vim/vimfiles
 set runtimepath+=/usr/local/share/vim/vim82
 set runtimepath+=~/.vim/pack/default/start/vim-signature/after
@@ -686,8 +790,10 @@ set runtimepath+=~/.vim/pack/default/start/vim-javascript/after
 set runtimepath+=~/.vim/pack/default/start/vim-instant-markdown/after
 set runtimepath+=~/.vim/pack/default/start/vim-cpp-enhanced-highlight/after
 set runtimepath+=~/.vim/pack/default/start/tern_for_vim/after
+set runtimepath+=~/.vim/pack/default/start/spelunker.vim/after
 set runtimepath+=~/.vim/pack/default/start/rust.vim/after
 set runtimepath+=~/.vim/pack/default/start/nerdtree-git-plugin/after
+set runtimepath+=~/.vim/pack/themes/start/dracula/after
 set runtimepath+=/usr/local/share/vim/vimfiles/after
 set runtimepath+=~/.vim/after
 set runtimepath+=~/.config/coc/extensions/node_modules/coc-explorer
@@ -701,9 +807,8 @@ set showmatch
 set smartcase
 set smartindent
 set softtabstop=2
-set spellfile=~/.vim/spell/en.utf-8.add
-set spelllang=en,cjk
 set statusline=%{coc#status()}%{get(b:,'coc_current_function','')}
+set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.snap
 set noswapfile
 set tabstop=2
 set tags='~/.cache/tags'
@@ -715,15 +820,15 @@ let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/
+cd ~/Desktop/Personal/02.Project/hlj/src
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
 argglobal
 %argdel
-$argadd vim
-edit ~/vim
+$argadd hlj.js
+edit ~/Desktop/Personal/02.Project/hlj/src/hlj.js
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -759,8 +864,8 @@ setlocal cinkeys=0{,0},0),0],:,0#,!^F,o,O,e
 setlocal cinoptions=
 setlocal cinwords=if,else,while,do,for,switch
 setlocal colorcolumn=
-setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
-setlocal commentstring=/*%s*/
+setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://
+setlocal commentstring=//%s
 setlocal complete=.,w,b,u,t,i
 setlocal concealcursor=
 setlocal conceallevel=0
@@ -772,14 +877,14 @@ setlocal nocursorcolumn
 set cursorline
 setlocal cursorline
 setlocal cursorlineopt=both
-setlocal define=
+setlocal define=\\(^\\s*(*async\\s\\+function\\|(*function\\)\\|^\\s*\\(\\*\\|static\\|async\\|get\\|set\\|\\i\\+\\.\\)\\|^\\s*\\(\\ze\\i\\+\\)\\(([^)]*).*{$\\|\\s*[:=,]\\)\\|^\\s*\\(export\\s\\+\\|export\\s\\+default\\s\\+\\)*\\(var\\|let\\|const\\|function\\|class\\)\\|\\<as\\>
 setlocal dictionary=
 setlocal nodiff
 setlocal equalprg=
 setlocal errorformat=
-setlocal noexpandtab
-if &filetype != ''
-setlocal filetype=
+setlocal expandtab
+if &filetype != 'javascript'
+setlocal filetype=javascript
 endif
 setlocal fixendofline
 setlocal foldcolumn=0
@@ -795,7 +900,7 @@ setlocal foldminlines=1
 setlocal foldnestmax=20
 setlocal foldtext=foldtext()
 setlocal formatexpr=
-setlocal formatoptions=tcq
+setlocal formatoptions=croql
 setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
 setlocal formatprg=
 setlocal grepprg=
@@ -803,10 +908,10 @@ setlocal iminsert=0
 setlocal imsearch=-1
 setlocal include=
 setlocal includeexpr=
-setlocal indentexpr=
-setlocal indentkeys=0{,0},0),0],:,0#,!^F,o,O,e
+setlocal indentexpr=GetJavascriptIndent()
+setlocal indentkeys=0{,0},0),0],:,0#,!^F,o,O,e,0],0)
 setlocal noinfercase
-setlocal iskeyword=@,48-57,_,192-255
+setlocal iskeyword=@,48-57,_,192-255,$
 setlocal keywordprg=
 setlocal nolinebreak
 setlocal nolisp
@@ -821,8 +926,8 @@ setlocal nrformats=bin,octal,hex
 set number
 setlocal number
 setlocal numberwidth=4
-setlocal omnifunc=
-setlocal path=
+setlocal omnifunc=javascriptcomplete#CompleteJS
+setlocal path=.,,
 setlocal nopreserveindent
 setlocal nopreviewwindow
 setlocal quoteescape=\\
@@ -838,24 +943,23 @@ setlocal showbreak=
 setlocal sidescrolloff=-1
 set signcolumn=number
 setlocal signcolumn=number
-setlocal smartindent
+setlocal nosmartindent
 setlocal softtabstop=2
-set spell
-setlocal spell
+setlocal nospell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
-setlocal spellfile=~/.vim/spell/en.utf-8.add
-setlocal spelllang=en,cjk
+setlocal spellfile=
+setlocal spelllang=en
 setlocal statusline=%!airline#statusline(1)
-setlocal suffixesadd=
+setlocal suffixesadd=.js,.jsx,.es,.es6,.cjs,.mjs,.jsm,.vue,.json
 setlocal noswapfile
 setlocal synmaxcol=3000
-if &syntax != ''
-setlocal syntax=
+if &syntax != 'javascript'
+setlocal syntax=javascript
 endif
 setlocal tabstop=2
 setlocal tagcase=
 setlocal tagfunc=
-setlocal tags=
+setlocal tags=~/.cache/tags/Users-c4-Desktop-Personal-02.Project-hlj-.tags,'~/.cache/tags'
 setlocal termwinkey=
 setlocal termwinscroll=10000
 setlocal termwinsize=
@@ -870,14 +974,14 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
-let s:l = 1 - ((0 * winheight(0) + 22) / 45)
+let s:l = 36 - ((11 * winheight(0) + 18) / 36)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
-normal! 0
+36
+normal! 031|
 tabnext 1
-badd +0 ~/vim
+badd +0 ~/Desktop/Personal/02.Project/hlj/src/hlj.js
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif

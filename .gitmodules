@@ -154,3 +154,6 @@
 [submodule "pack/themes/start/dracula"]
 	path = pack/themes/start/dracula
 	url = git@github.com:dracula/vim.git
+[submodule "pack/default/start/vim-visual-multi"]
+	path = pack/default/start/vim-visual-multi
+	url = git@github.com:mg979/vim-visual-multi.git
