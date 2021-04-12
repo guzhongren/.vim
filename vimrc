@@ -149,6 +149,17 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType java set omnifunc=javacomplete#Complet
 
+" NERDTree
+let NERDTreeShowHidden=1
+autocmd vimenter * NERDTree
+wincmd w
+autocmd vimenter * wincmd w
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+map <F3> :NERDTreeMirror<CR>
+map <F3> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " ack.vim
 " 使用 leader + a search
@@ -161,6 +172,31 @@ endif
 
 " 高亮搜索关键词
 let g:ackhighlight = 1
+
+" nerdcommenter
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not 
+let g:NERDToggleCheckAllLines = 1
 
 " Rust
 let g:rustfmt_autosave = 1
@@ -570,41 +606,41 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-" Explorer
-nmap <space>e :CocCommand explorer<CR>
-nmap <space>f :CocCommand explorer --preset floating<CR>
-autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-
-" let g:coc_explorer_global_presets = {
-" \   '.vim': {
-" \     'root-uri': '~/.vim',
-" \   },
-" \   'tab': {
-" \     'position': 'tab',
-" \     'quit-on-open': v:true,
-" \   },
-" \   'floating': {
-" \     'position': 'floating',
-" \     'open-action-strategy': 'sourceWindow',
-" \   },
-" \   'floatingTop': {
-" \     'position': 'floating',
-" \     'floating-position': 'center-top',
-" \     'open-action-strategy': 'sourceWindow',
-" \   },
-" \   'floatingLeftside': {
-" \     'position': 'floating',
-" \     'floating-position': 'left-center',
-" \     'floating-width': 50,
-" \     'open-action-strategy': 'sourceWindow',
-" \   },
-" \   'floatingRightside': {
-" \     'position': 'floating',
-" \     'floating-position': 'right-center',
-" \     'floating-width': 50,
-" \     'open-action-strategy': 'sourceWindow',
-" \   },
-" \   'simplify': {
-" \     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
-" \   }
-" \ }
+" " Explorer
+" nmap <space>e :CocCommand explorer<CR>
+" nmap <space>f :CocCommand explorer --preset floating<CR>
+" autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+" 
+" " let g:coc_explorer_global_presets = {
+" " \   '.vim': {
+" " \     'root-uri': '~/.vim',
+" " \   },
+" " \   'tab': {
+" " \     'position': 'tab',
+" " \     'quit-on-open': v:true,
+" " \   },
+" " \   'floating': {
+" " \     'position': 'floating',
+" " \     'open-action-strategy': 'sourceWindow',
+" " \   },
+" " \   'floatingTop': {
+" " \     'position': 'floating',
+" " \     'floating-position': 'center-top',
+" " \     'open-action-strategy': 'sourceWindow',
+" " \   },
+" " \   'floatingLeftside': {
+" " \     'position': 'floating',
+" " \     'floating-position': 'left-center',
+" " \     'floating-width': 50,
+" " \     'open-action-strategy': 'sourceWindow',
+" " \   },
+" " \   'floatingRightside': {
+" " \     'position': 'floating',
+" " \     'floating-position': 'right-center',
+" " \     'floating-width': 50,
+" " \     'open-action-strategy': 'sourceWindow',
+" " \   },
+" " \   'simplify': {
+" " \     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+" " \   }
+" " \ }
