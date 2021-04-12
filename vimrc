@@ -1,6 +1,5 @@
-" 定义快捷键的前,缀 即<Leader>
+" 定义快捷键的前缀 即<Leader>
 let mapleader=" "
-
 " 开启鼠标复制粘贴
 if has('mouse')
 	set mouse-=a
