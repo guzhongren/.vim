@@ -13,15 +13,18 @@ inoremap <expr> <Plug>(fzf-complete-file) fzf#vim#complete#path("find . -path '*
 inoremap <expr> <Plug>(fzf-complete-path) fzf#vim#complete#path("find . -path '*/\.*' -prune -o -print | sed '1d;s:^..::'")
 inoremap <expr> <Plug>(fzf-complete-word) fzf#vim#complete#word()
 inoremap <silent> <Plug>CocRefresh =coc#_complete()
-inoremap <nowait> <expr> <C-B> coc#float#has_scroll() ? "\=coc#float#scroll(0)\" : "\<Left>"
-inoremap <nowait> <expr> <C-F> coc#float#has_scroll() ? "\=coc#float#scroll(1)\" : "\<Right>"
+inoremap <nowait> <expr> <C-B> coc#float#has_scroll() ? "\=coc#float#scroll(0)\
+" : "\<Left>"
+inoremap <nowait> <expr> <C-F> coc#float#has_scroll() ? "\=coc#float#scroll(1)\
+" : "\<Right>"
 inoremap <silent> <expr> <C-@> coc#refresh()
 inoremap <silent> <expr> <Nul> coc#refresh()
 inoremap <expr> <S-Tab> pumvisible() ? "\" : "\"
 map! <D-v> *
 nnoremap <nowait> <expr>  coc#float#has_scroll() ? coc#float#scroll(0) : "\"
 nnoremap <nowait> <expr>  coc#float#has_scroll() ? coc#float#scroll(1) : "\"
-map  <Plug>(wildfire-fuel)
+map 
+ <Plug>(wildfire-fuel)
 xmap <nowait>  <Plug>(VM-Find-Subword-Under)
 nmap <nowait>  <Plug>(VM-Find-Under)
 map  <Plug>(ctrlp)
@@ -61,11 +64,11 @@ nnoremap  j :AnyJump
 nnoremap <nowait> <silent>  s :CocList -I symbols
 nnoremap <nowait> <silent>  o :CocList outline
 nnoremap <nowait> <silent>  c :CocList commands
-nmap  e :CocCommand explorer
+nnoremap <nowait> <silent>  e :CocList extensions
 nmap  qf <Plug>(coc-fix-current)
 nmap  ac <Plug>(coc-codeaction)
 xmap  a <Plug>(coc-codeaction-selected)
-nmap  f :CocCommand explorer --preset floating
+nmap  f <Plug>(coc-format-selected)
 xmap  f <Plug>(coc-format-selected)
 nmap  rn <Plug>(coc-rename)
 nmap <silent>  + <Plug>(coc-diagnostic-next)
@@ -309,7 +312,8 @@ nnoremap <silent> <Plug>(VM-Mouse-Column) :call vm#commands#mouse_column()
 nmap <silent> <Plug>(VM-Mouse-Word) <Plug>(VM-Left-Mouse)<Plug>(VM-Find-Under)
 nmap <silent> <Plug>(VM-Mouse-Cursor) <Plug>(VM-Left-Mouse)<Plug>(VM-Add-Cursor-At-Pos)
 nnoremap <silent> <Plug>(VM-Left-Mouse) <LeftMouse>
-xnoremap <silent> <Plug>(VM-Visual-Regex) :call vm#commands#find_by_regex(2):call feedkeys('/', 'n')
+xnoremap <silent> <Plug>(VM-Visual-Regex) :call vm#commands#find_by_regex(2)
+:call feedkeys('/', 'n')
 nnoremap <silent> <Plug>(VM-Slash-Search) @=vm#commands#find_by_regex(3)
 nnoremap <silent> <Plug>(VM-Start-Regex-Search) @=vm#commands#find_by_regex(1)
 nnoremap <silent> <Plug>(VM-Find-Under) :call vm#commands#ctrln(v:count1)
@@ -337,10 +341,14 @@ nnoremap <silent> <Plug>GitGutterStageHunk :call gitgutter#utility#warn('please 
 nnoremap <silent> <Plug>(GitGutterStageHunk) :GitGutterStageHunk
 xnoremap <silent> <Plug>GitGutterStageHunk :call gitgutter#utility#warn('please change your map <Plug>GitGutterStageHunk to <Plug>(GitGutterStageHunk)')
 xnoremap <silent> <Plug>(GitGutterStageHunk) :GitGutterStageHunk
-nnoremap <silent> <expr> <Plug>GitGutterPrevHunk &diff ? '[c' : ":\call gitgutter#utility#warn('please change your map \<Plug>GitGutterPrevHunk to \<Plug>(GitGutterPrevHunk)')\"
-nnoremap <silent> <expr> <Plug>(GitGutterPrevHunk) &diff ? '[c' : ":\execute v:count1 . 'GitGutterPrevHunk'\"
-nnoremap <silent> <expr> <Plug>GitGutterNextHunk &diff ? ']c' : ":\call gitgutter#utility#warn('please change your map \<Plug>GitGutterNextHunk to \<Plug>(GitGutterNextHunk)')\"
-nnoremap <silent> <expr> <Plug>(GitGutterNextHunk) &diff ? ']c' : ":\execute v:count1 . 'GitGutterNextHunk'\"
+nnoremap <silent> <expr> <Plug>GitGutterPrevHunk &diff ? '[c' : ":\call gitgutter#utility#warn('please change your map \<Plug>GitGutterPrevHunk to \<Plug>(GitGutterPrevHunk)')\
+"
+nnoremap <silent> <expr> <Plug>(GitGutterPrevHunk) &diff ? '[c' : ":\execute v:count1 . 'GitGutterPrevHunk'\
+"
+nnoremap <silent> <expr> <Plug>GitGutterNextHunk &diff ? ']c' : ":\call gitgutter#utility#warn('please change your map \<Plug>GitGutterNextHunk to \<Plug>(GitGutterNextHunk)')\
+"
+nnoremap <silent> <expr> <Plug>(GitGutterNextHunk) &diff ? ']c' : ":\execute v:count1 . 'GitGutterNextHunk'\
+"
 xnoremap <silent> <Plug>(GitGutterTextObjectOuterVisual) :call gitgutter#hunk#text_object(0)
 xnoremap <silent> <Plug>(GitGutterTextObjectInnerVisual) :call gitgutter#hunk#text_object(1)
 onoremap <silent> <Plug>(GitGutterTextObjectOuterPending) :call gitgutter#hunk#text_object(0)
@@ -723,21 +731,29 @@ nnoremap <silent> <Plug>(spelunker-toggle-buffer) :call spelunker#toggle_buffer(
 nnoremap <silent> <Plug>(spelunker-toggle) :call spelunker#toggle()
 nnoremap <silent> <Plug>(spelunker-jump-prev) :call spelunker#jump_prev()
 nnoremap <silent> <Plug>(spelunker-jump-next) :call spelunker#jump_next()
-nnoremap <silent> <Plug>(undo-temporary-spelunker-bad-nmap) :call spelunker#execute_with_target_word('spellundo!') :call spelunker#check()
+nnoremap <silent> <Plug>(undo-temporary-spelunker-bad-nmap) :call spelunker#execute_with_target_word('spellundo!')
+ :call spelunker#check()
 vnoremap <silent> <Plug>(undo-temporary-spelunker-bad) zuW :call spelunker#check()
-nnoremap <silent> <Plug>(add-temporary-spelunker-bad-nmap) :call spelunker#execute_with_target_word('spellwrong!') :call spelunker#check()
+nnoremap <silent> <Plug>(add-temporary-spelunker-bad-nmap) :call spelunker#execute_with_target_word('spellwrong!')
+ :call spelunker#check()
 vnoremap <silent> <Plug>(add-temporary-spelunker-bad) zW :call spelunker#check()
-nnoremap <silent> <Plug>(undo-spelunker-bad-nmap) :call spelunker#execute_with_target_word('spellundo') :call spelunker#check()
+nnoremap <silent> <Plug>(undo-spelunker-bad-nmap) :call spelunker#execute_with_target_word('spellundo')
+ :call spelunker#check()
 vnoremap <silent> <Plug>(undo-spelunker-bad) zuw :call spelunker#check()
-nnoremap <silent> <Plug>(add-spell-bad-nmap) :call spelunker#execute_with_target_word('spellwrong') :call spelunker#check()
+nnoremap <silent> <Plug>(add-spell-bad-nmap) :call spelunker#execute_with_target_word('spellwrong')
+ :call spelunker#check()
 vnoremap <silent> <Plug>(add-spelunker-bad) zw :call spelunker#check()
-nnoremap <silent> <Plug>(undo-temporary-spelunker-good-nmap) :call spelunker#execute_with_target_word('spellundo!') :call spelunker#check()
+nnoremap <silent> <Plug>(undo-temporary-spelunker-good-nmap) :call spelunker#execute_with_target_word('spellundo!')
+ :call spelunker#check()
 vnoremap <silent> <Plug>(undo-temporary-spelunker-good) zuG :call spelunker#check()
-nnoremap <silent> <Plug>(add-temporary-spelunker-good-nmap) :call spelunker#execute_with_target_word('spellgood!') :call spelunker#check()
+nnoremap <silent> <Plug>(add-temporary-spelunker-good-nmap) :call spelunker#execute_with_target_word('spellgood!')
+ :call spelunker#check()
 vnoremap <silent> <Plug>(add-temporary-spelunker-good) zG :call spelunker#check()
-nnoremap <silent> <Plug>(undo-spelunker-good-nmap) :call spelunker#execute_with_target_word('spellundo') :call spelunker#check()
+nnoremap <silent> <Plug>(undo-spelunker-good-nmap) :call spelunker#execute_with_target_word('spellundo')
+ :call spelunker#check()
 vnoremap <silent> <Plug>(undo-spelunker-good) zug :call spelunker#check()
-nnoremap <silent> <Plug>(add-spelunker-good-nmap) :call spelunker#execute_with_target_word('spellgood') :call spelunker#check()
+nnoremap <silent> <Plug>(add-spelunker-good-nmap) :call spelunker#execute_with_target_word('spellgood')
+ :call spelunker#check()
 vnoremap <silent> <Plug>(add-spelunker-good) zg :call spelunker#check()
 nnoremap <silent> <Plug>(spelunker-correct-all-feeling-lucky) :call spelunker#correct_all_feeling_lucky()
 nnoremap <silent> <Plug>(spelunker-correct-feeling-lucky) :call spelunker#correct_feeling_lucky()
@@ -819,14 +835,20 @@ nmap <F8> :Vista
 map <C-P> <Plug>(ctrlp)
 nmap <M-s> <Plug>MarkdownPreviewStop
 nmap <silent> <C-S> <Plug>(coc-range-select)
+map <F3> :NERDTreeToggle
 vmap <BS> <Plug>(wildfire-water)
 vmap <D-x> "*d
 vmap <D-c> "*y
 vmap <D-v> "-d"*P
 nmap <D-v> "*P
-inoremap <nowait> <expr>  coc#float#has_scroll() ? "\=coc#float#scroll(0)\" : "\<Left>"
-inoremap <nowait> <expr>  coc#float#has_scroll() ? "\=coc#float#scroll(1)\" : "\<Right>"
-inoremap <silent> <expr>  pumvisible() ? coc#_select_confirm(): "\u\\=coc#on_enter()\"
+inoremap <nowait> <expr>  coc#float#has_scroll() ? "\=coc#float#scroll(0)\
+" : "\<Left>"
+inoremap <nowait> <expr>  coc#float#has_scroll() ? "\=coc#float#scroll(1)\
+" : "\<Right>"
+inoremap <silent> <expr> 
+ pumvisible() ? coc#_select_confirm(): "\u\
+\=coc#on_enter()\
+"
 xnoremap <silent> î :call multiple_cursors#select_all("v", 0)
 nnoremap <silent> î :call multiple_cursors#select_all("n", 1)
 nmap ó <Plug>MarkdownPreviewStop
@@ -853,6 +875,7 @@ set incsearch
 set langmenu=zh_CN.UTF-8
 set laststatus=2
 set mouse=a
+set omnifunc=javascriptcomplete#CompleteJS
 set ruler
 set runtimepath=
 set runtimepath+=~/.config/coc/extensions/node_modules/coc-todolist
@@ -929,6 +952,7 @@ set smartcase
 set smartindent
 set softtabstop=2
 set statusline=%{coc#status()}%{get(b:,'coc_current_function','')}
+set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.snap
 set noswapfile
 set tabstop=2
 set tags='~/.cache/tags'
@@ -940,7 +964,7 @@ let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
 silent tabonly
-cd ~/.vim
+cd ~/temp/jwt-test
 if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
@@ -997,7 +1021,7 @@ setlocal nocursorcolumn
 set cursorline
 setlocal cursorline
 setlocal cursorlineopt=both
-setlocal define=
+setlocal define=\\(^\\s*(*async\\s\\+function\\|(*function\\)\\|^\\s*\\(\\*\\|static\\|async\\|get\\|set\\|\\i\\+\\.\\)\\|^\\s*\\(\\ze\\i\\+\\)\\(([^)]*).*{$\\|\\s*[:=,]\\)\\|^\\s*\\(export\\s\\+\\|export\\s\\+default\\s\\+\\)*\\(var\\|let\\|const\\|function\\|class\\)\\|\\<as\\>
 setlocal dictionary=
 setlocal nodiff
 setlocal equalprg=
@@ -1031,7 +1055,7 @@ setlocal includeexpr=
 setlocal indentexpr=
 setlocal indentkeys=0{,0},0),0],:,0#,!^F,o,O,e
 setlocal noinfercase
-setlocal iskeyword=@,48-57,_,192-255
+setlocal iskeyword=@,48-57,_,192-255,$
 setlocal keywordprg=
 setlocal nolinebreak
 setlocal nolisp
@@ -1070,7 +1094,7 @@ setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
 setlocal spelllang=en
 setlocal statusline=%!airline#statusline(1)
-setlocal suffixesadd=
+setlocal suffixesadd=.js,.jsx,.es,.es6,.cjs,.mjs,.jsm,.vue,.json
 setlocal noswapfile
 setlocal synmaxcol=3000
 if &syntax != ''
@@ -1079,7 +1103,7 @@ endif
 setlocal tabstop=2
 setlocal tagcase=
 setlocal tagfunc=
-setlocal tags=~/.cache/tags/Users-c4-.vim-.tags,'~/.cache/tags'
+setlocal tags=
 setlocal termwinkey=
 setlocal termwinscroll=10000
 setlocal termwinsize=
@@ -1091,7 +1115,7 @@ setlocal varsofttabstop=
 setlocal vartabstop=
 setlocal wincolor=
 setlocal nowinfixheight
-setlocal nowinfixwidth
+setlocal winfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 let s:l = 2 - ((1 * winheight(0) + 21) / 42)
