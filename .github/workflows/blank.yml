@@ -22,5 +22,6 @@ jobs:
           echo test, and deploy your project.
           mkdir -p pack/default/start
           mkdir -p pack/theme/start
-          git submodule update --init --recursive --depth=1
+          git submodule init
+          git submodule update
           ls -a
