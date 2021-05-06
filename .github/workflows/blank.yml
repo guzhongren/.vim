@@ -21,5 +21,5 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           ls -a
-          git submodule update --init --recursive --depth=1
+          sudo git submodule update --init --recursive --depth=1
           ls -a
