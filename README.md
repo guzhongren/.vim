@@ -8,7 +8,7 @@
 ## 安装
 
 ```shell
-$ git clone --recursive git@github.com:guzhongren/.vim.git ~/.vim
+$ git clone --depth=1 --recursive git@github.com:guzhongren/.vim.git ~/.vim
 ...
 ```
 
@@ -25,6 +25,6 @@ $ git submodule add git@github.com:lilydjwg/fcitx.vim.git ~/.vim/pack/default/st
 ## 更新
 
 ```shell
-$ git submodule update --recursive --remote
+$ git submodule update --recursive --remote --depth=1
 ...
 ```
