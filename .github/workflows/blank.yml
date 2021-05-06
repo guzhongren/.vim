@@ -22,3 +22,4 @@ jobs:
           echo test, and deploy your project.
           ls -a
           git submodule update --recursive --remote
+          ls -a
