@@ -20,6 +20,8 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          mkdir -p pack/default/start
+          mkdir -p pack/theme/start
           ls -a
           sudo git submodule update --init --recursive --depth=1
           ls -a
