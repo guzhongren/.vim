@@ -23,5 +23,4 @@ jobs:
           mkdir -p pack/default/start
           mkdir -p pack/theme/start
           git submodule init
-          git submodule update
           ls -a
