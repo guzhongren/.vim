@@ -28,3 +28,10 @@ $ git submodule add git@github.com:lilydjwg/fcitx.vim.git ~/.vim/pack/default/st
 $ git submodule update --recursive --remote --depth=1
 ...
 ```
+
+## 更新 Coc
+
+```shell
+$ vim xx
+:CocUpdate
+```
