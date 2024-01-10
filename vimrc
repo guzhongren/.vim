@@ -450,6 +450,7 @@ let g:coc_global_extensions = [
 	\ 'coc-deno',
 	\ 'coc-rls',
   \ 'coc-kotlin',
+  \ 'coc-java',
 	\ 'coc-yank']
 
   " TextEdit might fail if hidden is not set.
@@ -644,3 +645,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " " \     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
 " " \   }
 " " \ }
+let g:coc_java_home = '~/.asdf/installs/java/adoptopenjdk-17.0.9+9'
+
+" 设置Java LSP的日志级别（可选）
+let g:coc_java_logLevel = 'info'
