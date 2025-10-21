@@ -23,7 +23,7 @@ set nofoldenable
 syntax on
 
 " 使用配色方案
-" colorscheme solarized 
+" colorscheme solarized
 packadd! dracula
 colorscheme dracula
 " 使背景透明
@@ -33,65 +33,65 @@ filetype on
 
 " 不同文件类型采用不同缩进
 filetype indent on
- 
+
 " 允许使用插件
 filetype plugin on
 filetype plugin indent on
 
 " 关闭vi模式
 set nocp
- 
+
 " 与mac共享剪贴板
 set clipboard+=unnamed
 
 " 取消VI兼容
 set nocompatible
- 
+
 " 显示行号
 set nu
 
-" 历史命令保存行数 
+" 历史命令保存行数
 set history=1000
- 
+
 " 当文件被外部改变时自动读取
-set autoread 
+set autoread
 
 " 取消自动备份及产生 swp 文件
 set nobackup
 set nowb
 set noswapfile
- 
+
 " 允许使用鼠标点击定位
 set mouse=a
 " 允许区域选择
 set selection=exclusive
- 
+
 " 高亮光标所在行
 set cursorline
 " 取消光标闪烁
 set novisualbell
- 
+
 " 总是显示状态行
 set laststatus=2
 " 状态栏显示当前执行的命令
 set showcmd
- 
+
 " 标尺功能, 显示当前光标所在行列号
 set ruler
 " 设置命令行高度为2
 set cmdheight=2
- 
+
 " 粘贴时保持格式
 " set paste
 " 高亮显示匹配的括号
 set showmatch
- 
+
 " 在搜索的时候忽略大小写
 set ignorecase
- 
+
 " 高亮被搜索的句子
 set hlsearch
- 
+
 " 在搜索时, 输入的词句的逐字符高亮
 set incsearch
 " 大小写智能转换
@@ -99,34 +99,34 @@ set smartcase
 
 " 继承前一行的缩进方式
 set autoindent
- 
+
 " 为c程序提供自动缩进
 set smartindent
 " 使用c样式的缩进
 set cindent
- 
+
 set expandtab
 " 制表符为2
 set tabstop=2
 " 统一缩进为2
 set softtabstop=2
 set shiftwidth=2
- 
+
 " 允许使用退格键
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 " 换行
 set wrap
- 
+
 " 在被分割的窗口间显示空白
 set fillchars=vert:\ ,stl:\ ,stlnc:\
- 
+
 " 光标移动到buffer的顶部和底部时保持3行距离
 set scrolloff=3
 " 设定默认解码
 set fenc=utf-8
 set fencs=utf-8,usc-bom,euc-jp,gb18030,gbk,gb2312,cp936
- 
+
 " 设定编码
 set enc=utf-8
 set fileencodings=ucs-bom,utf-8,chinese
@@ -134,7 +134,7 @@ set langmenu=zh_CN.UTF-8
 language message zh_CN.UTF-8
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
- 
+
 " 自动补全
 filetype plugin indent on
 set completeopt=longest,menu
@@ -195,7 +195,7 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
-" Enable NERDCommenterToggle to check all selected lines is commented or not 
+" Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 
 " Rust
@@ -611,7 +611,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " nmap <space>e :CocCommand explorer<CR>
 " nmap <space>f :CocCommand explorer --preset floating<CR>
 " autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-" 
+"
 " " let g:coc_explorer_global_presets = {
 " " \   '.vim': {
 " " \     'root-uri': '~/.vim',

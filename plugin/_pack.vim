@@ -5,5 +5,3 @@ scriptencoding utf-8
 function! s:do_cmd(cmd, bang, start, end, args)
     exec printf('%s%s%s %s', (a:start == a:end ? '' : (a:start.','.a:end)), a:cmd, a:bang, a:args)
 endfunction
-
-

@@ -15,7 +15,7 @@ git submodule update --recursive --remote --depth=1
 cd ~/.vim/pack/default/start/coc.nvim
 npm ci
 # Install coc plugins
-vim xxx 
+vim xxx
 ```
 
 ## 添加
