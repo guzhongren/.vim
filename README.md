@@ -12,6 +12,10 @@ git clone --depth=1 --recursive git@github.com:guzhongren/.vim.git ~/.vim
 ...
 git submodule init
 git submodule update --recursive --remote --depth=1
+cd ~/.vim/pack/default/start/coc.nvim
+npm ci
+# Install coc plugins
+vim xxx 
 ```
 
 ## 添加
