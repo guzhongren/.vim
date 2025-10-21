@@ -1,0 +1,2 @@
+[tools]
+pre-commit = {version = '4.3.0', postinstall = "pre-commit install"}
