@@ -6,7 +6,7 @@
 ![vim](./vim.png)
 
 ## 安装
-Optional: replace `git@gihtub.com:` with `hppts://github.com/` for `.gitmodules` file content
+Optional: replace `git@gihtub.com:` with `https://github.com/` for `.gitmodules` file content
 ```shell
 git clone --depth=1 --recursive git@github.com:guzhongren/.vim.git ~/.vim
 ...
