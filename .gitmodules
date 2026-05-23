@@ -46,15 +46,7 @@
 [submodule "pack/default/start/vim-instant-markdown"]
 	path = pack/default/start/vim-instant-markdown
 	url = git@github.com:suan/vim-instant-markdown.git
-[submodule "pack/default/start/typescript-vim"]
-	path = pack/default/start/typescript-vim
-	url = git@github.com:leafgarland/typescript-vim.git
-[submodule "pack/default/start/typescript-vim"]
-	path = pack/default/start/typescript-vim
-	url = git@github.com:leafgarland/typescript-vim.git
-[submodule "pack/default/start/typescript-vim"]
-	path = pack/default/start/typescript-vim
-	url = git@github.com:leafgarland/typescript-vim.git
+
 [submodule "pack/default/start/typescript-vim"]
 	path = pack/default/start/typescript-vim
 	url = git@github.com:leafgarland/typescript-vim.git

@@ -1,9 +1,5 @@
 " 定义快捷键的前缀 即<Leader>
 let mapleader=" "
-" 开启鼠标复制粘贴
-if has('mouse')
-	set mouse-=a
-endif
 
 " 设置状态栏主题风格
 let g:Powerline_colorscheme='solarized256'
@@ -14,10 +10,6 @@ set foldmethod=syntax
 " 启动 vim 时关闭折叠代码
 set nofoldenable
 
-" 打开拼写检查
-" set spelllang=en,cjk
-" set spell
-" set spellfile=~/.vim/spell/en.utf-8.add
 
 " 打开语法高亮
 syntax on
@@ -29,17 +21,9 @@ colorscheme dracula
 " 使背景透明
 hi Normal guibg=NONE ctermbg=NONE
 " 打开文件类型检测功能
-filetype on
-
-" 不同文件类型采用不同缩进
-filetype indent on
-
-" 允许使用插件
-filetype plugin on
+" 打开文件类型检测、缩进、插件
 filetype plugin indent on
 
-" 关闭vi模式
-set nocp
 
 " 与mac共享剪贴板
 set clipboard+=unnamed
@@ -82,7 +66,6 @@ set ruler
 set cmdheight=2
 
 " 粘贴时保持格式
-" set paste
 " 高亮显示匹配的括号
 set showmatch
 
@@ -152,12 +135,10 @@ autocmd FileType java set omnifunc=javacomplete#Complet
 " NERDTree
 let NERDTreeShowHidden=1
 autocmd vimenter * NERDTree
-wincmd w
 autocmd vimenter * wincmd w
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-map <F3> :NERDTreeMirror<CR>
 map <F3> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -326,11 +307,6 @@ let g:vista#renderer#icons = {
 \   "function": "\uf794",
 \   "variable": "\uf71b",
 \  }
-" function! NearestMethodOrFunction() abort
-" 	return get(b:, 'vista_nearest_method_or_function', '')
-" endfunction
-" set statusline+=%{NearestMethodOrFunction()}
-" autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
 
 let g:scrollstatus_size = 15
 
@@ -607,44 +583,6 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-" " Explorer
-" nmap <space>e :CocCommand explorer<CR>
-" nmap <space>f :CocCommand explorer --preset floating<CR>
-" autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-"
-" " let g:coc_explorer_global_presets = {
-" " \   '.vim': {
-" " \     'root-uri': '~/.vim',
-" " \   },
-" " \   'tab': {
-" " \     'position': 'tab',
-" " \     'quit-on-open': v:true,
-" " \   },
-" " \   'floating': {
-" " \     'position': 'floating',
-" " \     'open-action-strategy': 'sourceWindow',
-" " \   },
-" " \   'floatingTop': {
-" " \     'position': 'floating',
-" " \     'floating-position': 'center-top',
-" " \     'open-action-strategy': 'sourceWindow',
-" " \   },
-" " \   'floatingLeftside': {
-" " \     'position': 'floating',
-" " \     'floating-position': 'left-center',
-" " \     'floating-width': 50,
-" " \     'open-action-strategy': 'sourceWindow',
-" " \   },
-" " \   'floatingRightside': {
-" " \     'position': 'floating',
-" " \     'floating-position': 'right-center',
-" " \     'floating-width': 50,
-" " \     'open-action-strategy': 'sourceWindow',
-" " \   },
-" " \   'simplify': {
-" " \     'file-child-template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
-" " \   }
-" " \ }
 let g:coc_java_home = '~/.asdf/installs/java/adoptopenjdk-17.0.9+9'
 
 " 设置Java LSP的日志级别（可选）
