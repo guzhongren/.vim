@@ -1,148 +1,148 @@
 [submodule "pack/default/start/vim-colors-solarized"]
 	path = pack/default/start/vim-colors-solarized
-	url = git@github.com:altercation/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "pack/default/start/powerline"]
 	path = pack/default/start/powerline
-	url = git@github.com:powerline/powerline.git
+	url = https://github.com/powerline/powerline.git
 [submodule "pack/default/start/vim-cpp-enhanced-highlight"]
 	path = pack/default/start/vim-cpp-enhanced-highlight
-	url = git@github.com:octol/vim-cpp-enhanced-highlight.git
+	url = https://github.com/octol/vim-cpp-enhanced-highlight.git
 [submodule "pack/default/start/vim-indent-guides"]
 	path = pack/default/start/vim-indent-guides
-	url = git@github.com:nathanaelkane/vim-indent-guides.git
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
 [submodule "pack/default/start/phvim-fswitchd"]
 	path = pack/default/start/phvim-fswitchd
-	url = git@github.com:derekwyatt/vim-fswitch.git
+	url = https://github.com/derekwyatt/vim-fswitch.git
 [submodule "pack/default/start/vim-signature"]
 	path = pack/default/start/vim-signature
-	url = git@github.com:kshenoy/vim-signature.git
+	url = https://github.com/kshenoy/vim-signature.git
 [submodule "pack/default/start/tagbar"]
 	path = pack/default/start/tagbar
-	url = git@github.com:majutsushi/tagbar.git
+	url = https://github.com/majutsushi/tagbar.git
 [submodule "pack/default/start/indexer.tar.gz"]
 	path = pack/default/start/indexer.tar.gz
-	url = git@github.com:vim-scripts/indexer.tar.gz.git
+	url = https://github.com/vim-scripts/indexer.tar.gz.git
 [submodule "pack/default/start/DfrankUtil"]
 	path = pack/default/start/DfrankUtil
-	url = git@github.com:vim-scripts/DfrankUtil.git
+	url = https://github.com/vim-scripts/DfrankUtil.git
 [submodule "pack/default/start/vimprj"]
 	path = pack/default/start/vimprj
-	url = git@github.com:vim-scripts/vimprj.git
+	url = https://github.com/vim-scripts/vimprj.git
 [submodule "pack/default/start/vim-multiple-cursors"]
 	path = pack/default/start/vim-multiple-cursors
-	url = git@github.com:terryma/vim-multiple-cursors.git
+	url = https://github.com/terryma/vim-multiple-cursors.git
 [submodule "pack/default/start/vim-protodef"]
 	path = pack/default/start/vim-protodef
-	url = git@github.com:derekwyatt/vim-protodef.git
+	url = https://github.com/derekwyatt/vim-protodef.git
 [submodule "pack/default/start/wildfire.vim"]
 	path = pack/default/start/wildfire.vim
-	url = git@github.com:gcmt/wildfire.vim.git
+	url = https://github.com/gcmt/wildfire.vim.git
 [submodule "pack/default/start/gundo.vim"]
 	path = pack/default/start/gundo.vim
-	url = git@github.com:sjl/gundo.vim.git
+	url = https://github.com/sjl/gundo.vim.git
 [submodule "pack/default/start/vim-easymotion"]
 	path = pack/default/start/vim-easymotion
-	url = git@github.com:Lokaltog/vim-easymotion.git
+	url = https://github.com/Lokaltog/vim-easymotion.git
 [submodule "pack/default/start/vim-instant-markdown"]
 	path = pack/default/start/vim-instant-markdown
-	url = git@github.com:suan/vim-instant-markdown.git
+	url = https://github.com/suan/vim-instant-markdown.git
 
 [submodule "pack/default/start/typescript-vim"]
 	path = pack/default/start/typescript-vim
-	url = git@github.com:leafgarland/typescript-vim.git
+	url = https://github.com/leafgarland/typescript-vim.git
 [submodule "pack/default/start/Dockerfile.vim"]
 	path = pack/default/start/Dockerfile.vim
-	url = git@github.com:ekalinin/Dockerfile.vim.git
+	url = https://github.com/ekalinin/Dockerfile.vim.git
 [submodule "pack/default/start/editorconfig-vim"]
 	path = pack/default/start/editorconfig-vim
-	url = git@github.com:editorconfig/editorconfig-vim.git
+	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule "pack/default/start/nerdtree"]
 	path = pack/default/start/nerdtree
-	url = git@github.com:scrooloose/nerdtree.git
+	url = https://github.com/scrooloose/nerdtree.git
 [submodule "pack/default/start/rust.vim"]
 	path = pack/default/start/rust.vim
-	url = git@github.com:rust-lang/rust.vim.git
+	url = https://github.com/rust-lang/rust.vim.git
 [submodule "pack/default/start/tern_for_vim"]
 	path = pack/default/start/tern_for_vim
-	url = git@github.com:ternjs/tern_for_vim.git
+	url = https://github.com/ternjs/tern_for_vim.git
 [submodule "pack/default/start/thrift.vim"]
 	path = pack/default/start/thrift.vim
-	url = git@github.com:solarnz/thrift.vim.git
+	url = https://github.com/solarnz/thrift.vim.git
 [submodule "pack/default/start/vim-airline"]
 	path = pack/default/start/vim-airline
-	url = git@github.com:vim-airline/vim-airline.git
+	url = https://github.com/vim-airline/vim-airline.git
 [submodule "pack/default/start/vim-airline-themes"]
 	path = pack/default/start/vim-airline-themes
-	url = git@github.com:vim-airline/vim-airline-themes.git
+	url = https://github.com/vim-airline/vim-airline-themes.git
 [submodule "pack/default/start/vim-fugitive"]
 	path = pack/default/start/vim-fugitive
-	url = git@github.com:tpope/vim-fugitive.git
+	url = https://github.com/tpope/vim-fugitive.git
 [submodule "pack/default/start/vim-go"]
 	path = pack/default/start/vim-go
-	url = git@github.com:fatih/vim-go.git
+	url = https://github.com/fatih/vim-go.git
 [submodule "pack/default/start/vim-markdown"]
 	path = pack/default/start/vim-markdown
-	url = git@github.com:plasticboy/vim-markdown.git
+	url = https://github.com/plasticboy/vim-markdown.git
 [submodule "pack/default/start/webapi-vim"]
 	path = pack/default/start/webapi-vim
-	url = git@github.com:mattn/webapi-vim.git
+	url = https://github.com/mattn/webapi-vim.git
 [submodule "pack/default/start/vim-javascript"]
 	path = pack/default/start/vim-javascript
-	url = git@github.com:pangloss/vim-javascript.git
+	url = https://github.com/pangloss/vim-javascript.git
 [submodule "pack/default/start/nerdtree-git-plugin"]
 	path = pack/default/start/nerdtree-git-plugin
-	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
 [submodule "pack/default/start/vim-rainbow"]
 	path = pack/default/start/vim-rainbow
-	url = git@github.com:frazrepo/vim-rainbow.git
+	url = https://github.com/frazrepo/vim-rainbow.git
 [submodule "pack/default/start/nerdcommenter"]
 	path = pack/default/start/nerdcommenter
-	url = git@github.com:scrooloose/nerdcommenter.git
+	url = https://github.com/scrooloose/nerdcommenter.git
 [submodule "pack/default/start/fzf.vim"]
 	path = pack/default/start/fzf.vim
-	url = git@github.com:junegunn/fzf.vim.git
+	url = https://github.com/junegunn/fzf.vim.git
 [submodule "pack/default/start/ack.vim"]
 	path = pack/default/start/ack.vim
-	url = git@github.com:mileszs/ack.vim.git
+	url = https://github.com/mileszs/ack.vim.git
 [submodule "pack/default/start/vim-gitgutter"]
 	path = pack/default/start/vim-gitgutter
-	url = git@github.com:airblade/vim-gitgutter.git
+	url = https://github.com/airblade/vim-gitgutter.git
 [submodule "pack/default/start/taglist.vim"]
 	path = pack/default/start/taglist.vim
-	url = git@github.com:vim-scripts/taglist.vim.git
+	url = https://github.com/vim-scripts/taglist.vim.git
 [submodule "pack/default/start/markdown-preview.nvim"]
 	path = pack/default/start/markdown-preview.nvim
-	url = git@github.com:iamcco/markdown-preview.nvim.git
+	url = https://github.com/iamcco/markdown-preview.nvim.git
 [submodule "pack/default/start/vim-wakatime"]
 	path = pack/default/start/vim-wakatime
-	url = git@github.com:wakatime/vim-wakatime.git
+	url = https://github.com/wakatime/vim-wakatime.git
 [submodule "pack/default/start/vista.vim"]
 	path = pack/default/start/vista.vim
-	url = git@github.com:liuchengxu/vista.vim.git
+	url = https://github.com/liuchengxu/vista.vim.git
 [submodule "pack/default/start/vim-gutentags"]
 	path = pack/default/start/vim-gutentags
-	url = git@github.com:ludovicchabant/vim-gutentags.git
+	url = https://github.com/ludovicchabant/vim-gutentags.git
 [submodule "pack/default/start/rainbow_parentheses.vim"]
 	path = pack/default/start/rainbow_parentheses.vim
-	url = git@github.com:kien/rainbow_parentheses.vim.git
+	url = https://github.com/kien/rainbow_parentheses.vim.git
 [submodule "pack/default/start/any-jump.vim"]
 	path = pack/default/start/any-jump.vim
-	url = git@github.com:pechorin/any-jump.vim.git
+	url = https://github.com/pechorin/any-jump.vim.git
 [submodule "pack/default/start/kotlin-vim"]
 	path = pack/default/start/kotlin-vim
-	url = git@github.com:udalov/kotlin-vim.git
+	url = https://github.com/udalov/kotlin-vim.git
 [submodule "pack/default/start/ctrlp.vim"]
 	path = pack/default/start/ctrlp.vim
-	url = git@github.com:ctrlpvim/ctrlp.vim.git
+	url = https://github.com/ctrlpvim/ctrlp.vim.git
 [submodule "pack/default/start/coc.nvim"]
 	path = pack/default/start/coc.nvim
-	url = git@github.com:neoclide/coc.nvim.git
+	url = https://github.com/neoclide/coc.nvim.git
 [submodule "pack/default/start/spelunker.vim"]
 	path = pack/default/start/spelunker.vim
-	url = git@github.com:kamykn/spelunker.vim.git
+	url = https://github.com/kamykn/spelunker.vim.git
 [submodule "pack/themes/start/dracula"]
 	path = pack/themes/start/dracula
-	url = git@github.com:dracula/vim.git
+	url = https://github.com/dracula/vim.git
 [submodule "pack/default/start/vim-visual-multi"]
 	path = pack/default/start/vim-visual-multi
-	url = git@github.com:mg979/vim-visual-multi.git
+	url = https://github.com/mg979/vim-visual-multi.git
