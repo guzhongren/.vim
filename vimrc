@@ -290,11 +290,21 @@ if !isdirectory(s:vim_tags)
 endif
 
 " 配置 ctags 的参数 "
-set tags='~/.cache/tags'
+set tags=~/.cache/tags
 set autochdir
-let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
-let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
+if executable('/opt/homebrew/bin/ctags')
+   let g:gutentags_ctags_executable = '/opt/homebrew/bin/ctags'
+elseif executable('/usr/local/bin/ctags')
+   let g:gutentags_ctags_executable = '/usr/local/bin/ctags'
+endif
+let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extras=+q']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+px']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
+let g:gutentags_ctags_exclude = [
+\  '*.git', '*.svn', '*.hg',
+\  'node_modules', 'dist', 'build', 'target', '.next', '.cache',
+\  'vendor', 'coverage', '*.min.js'
+\]
 
 " noremap <LEADER>v :Vista<CR>
 " noremap <c-t> :silent! Vista finder coc<CR>:
